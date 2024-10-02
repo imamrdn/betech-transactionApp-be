@@ -45,8 +45,8 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: "Users", // Name of the related model
-          key: "id", // Primary key in the related model
+          model: "Users",
+          key: "id",
         },
       },
     },

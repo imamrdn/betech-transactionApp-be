@@ -21,6 +21,7 @@ class TransactionRepository {
     try {
       const transactions = await Transaction.findAll({
         where: { userId },
+        order: [["date", "DESC"]],
       });
       return transactions;
     } catch (error) {

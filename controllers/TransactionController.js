@@ -161,6 +161,7 @@ class TransactionController {
         balance,
       });
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }

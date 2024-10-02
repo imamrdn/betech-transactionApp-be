@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const TransactionController = require("../controllers/TransactionController");
 
+router.get("/balance", TransactionController.getBalance);
 router.get("/", TransactionController.getAllTransactions);
 router.post("/", TransactionController.createTransaction);
 router.get("/:id", TransactionController.getTransactionById);
